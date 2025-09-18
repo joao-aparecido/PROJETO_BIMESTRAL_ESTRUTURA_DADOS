@@ -17,20 +17,20 @@ int carregar_csv(char *NomeArquivo, Processo *V) {
 
     while (fgets(linha, 512, f) && n < MAX) {
         sscanf(linha, "%[^;];%*[^;];%*[^;];%*[^;];%*[^;];%*[^;];%*[^;];%*[^;];%[^;];%[^;];%*[^;];%d;%d;%d;%d;%d;%d;%*[^;];%[^;];%d;%*[^;];%*[^;];%*[^;];%*[^;];%d;%d;%d",
-            v[n].id_processo,
-            v[n].id_ultimo_oj,
-            v[n].dt_recebimento,
-            &v[n].flag_violencia_domestica,
-            &v[n].flag_feminicidio,
-            &v[n].flag_ambiental,
-            &v[n].flag_quilombolas,
-            &v[n].flag_indigenas,
-            &v[n].flag_infancia,
-            v[n].dt_resolvido,
-            &v[n].cnm1,
-            &v[n].julgadom1,
-            &v[n].desm1,
-            &v[n].susm1
+            V[n].id_processo,
+            V[n].id_ultimo_oj,
+            V[n].dt_recebimento,
+            &V[n].flag_violencia_domestica,
+            &V[n].flag_feminicidio,
+            &V[n].flag_ambiental,
+            &V[n].flag_quilombolas,
+            &V[n].flag_indigenas,
+            &V[n].flag_infancia,
+            V[n].dt_resolvido,
+            &V[n].cnm1,
+            &V[n].julgadom1,
+            &V[n].desm1,
+            &V[n].susm1
         );
         n++;
     }
