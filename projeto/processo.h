@@ -26,5 +26,6 @@ int contar_indigenas(Processo *v, int n);
 int contar_infancia(Processo *v, int n);
 double calcular_meta1(Processo *v, int n);
 void salvar_julgados_csv(Processo *v, int n, char *saida);
+int dias_entre_dt(Processo * V, int n, char * id_processo);
 
 #endif
