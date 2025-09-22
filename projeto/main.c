@@ -52,7 +52,7 @@ int main() {
     printf("7) Quilombolas: %d\n", contar_quilombolas(v, n));
     printf("8) Indígenas: %d\n", contar_indigenas(v, n));
     printf("9) Infância e juventude: %d\n", contar_infancia(v, n));
-    printf("10) Dias entre recebimento e resolvido: %d\n", dias_entre_dt(v, n, v[0].id_processo));
+    printf("10) Dias entre recebimento e resolução: %d\n", dias_entre_dt(v, n, v[0].id_processo));
     printf("11) Meta 1: %.2f%%\n", calcular_meta1(v, n));
 
     salvar_julgados_csv(v, n, "julgados_amostra.csv");
